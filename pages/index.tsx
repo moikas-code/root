@@ -9,7 +9,10 @@ export default function Dragon() {
       <hr />
       <p>
         Twitter:{' '}
-        <a href='https://twitter.com/takolabsio' target={'_blank'}>
+        <a
+          href='https://twitter.com/takolabsio'
+          target={'_blank'}
+          rel='noreferrer'>
           @takolabsio
         </a>
       </p>
