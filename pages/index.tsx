@@ -18,6 +18,10 @@ export default function Dragon() {
         max-width: 1200px;
         min-height: 400px;
       }
+      .s2-md{
+        max-width: 768px;
+        min-height: 400px;
+      }
       .footer a,
       .footer a:visited{
         color: #000;
@@ -27,7 +31,9 @@ export default function Dragon() {
 
       <div className='h-100'>
         <div className='s1 p-5 w-100 d-flex flex-column justify-content-center align-items-center'>
-          <h1 className='display-3 mx-auto'>Experiment Decentralizing Your Data With Tako Labs</h1>
+          <h1 className='display-3 mx-auto'>
+            Experiment Decentralizing Your Data With Tako Labs
+          </h1>
         </div>
         <div className='s2 p-5 w-100 d-flex flex-column justify-content-center align-items-center'>
           <h3 className='border-bottom border-dark mb-3'>The Ecosystem</h3>
@@ -81,7 +87,7 @@ export default function Dragon() {
             />
           </div>
         </div>
-        <div className='s2-lg mx-auto p-5 d-flex flex-column justify-content-center align-items-center'>
+        <div className='s2-md mx-auto p-5 d-flex flex-column justify-content-center align-items-center'>
           <span>
             Tako Labs is a community working on an Open Source project. Our goal
             is to create tools to help introduce new users to the blockchain
