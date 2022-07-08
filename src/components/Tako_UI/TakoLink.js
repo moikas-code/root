@@ -3,7 +3,7 @@ import {useMemo} from 'react';
 import {resolve} from 'url';
 
 import Link from 'next/link';
-const TakoLink = ({href, as, rel, target, ...rest}) => {
+const TakoLink = ({href, as, rel, target, className, ...rest}) => {
   const newAs = useMemo(() => {
     let baseURI_as = as || href;
 
@@ -25,7 +25,9 @@ const TakoLink = ({href, as, rel, target, ...rest}) => {
   }, [as, href]);
 
   return (
-    <Link rel={rel | ''} target={target} {...rest} href={href} as={newAs} />
+    <span className={className}>
+      <Link rel={rel | ''} target={target} {...rest} href={href} as={newAs} />
+    </span>
   );
 };
 

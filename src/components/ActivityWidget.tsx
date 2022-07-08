@@ -4,7 +4,7 @@ import moment from 'moment';
 import Button from './common/button';
 import {truncateAddress} from '../lib/moiWeb3';
 import TabButton from './TabButton';
-import TakoLink from './TakoLink';
+import TakoLink from './Tako_UI/TakoLink';
 import useInterval from '../utility/useInterval';
 const query = gql`
   query Activites($input: QueryInput!) {

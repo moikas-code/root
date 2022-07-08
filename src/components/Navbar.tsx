@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useRouter} from 'next/router';
 import {truncateAddress} from '../lib/moiWeb3';
-import TakoLink from './TakoLink';
+import TakoLink from './Tako_UI/TakoLink';
 import WalletButton from './walletbutton';
 import WalletButtonItem from './walletbuttonitem';
 import Button from './common/button';
