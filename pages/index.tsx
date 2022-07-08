@@ -27,34 +27,57 @@ export default function Dragon() {
 
       <div className='h-100'>
         <div className='s1 p-5 w-100 d-flex flex-column justify-content-center align-items-center'>
-          <h1>Experiment Decentralizing Your Data With Tako Labs</h1>
+          <h1 className='display-3 mx-auto'>Experiment Decentralizing Your Data With Tako Labs</h1>
         </div>
         <div className='s2 p-5 w-100 d-flex flex-column justify-content-center align-items-center'>
-          <h4 className='border-bottom border-dark mb-3'>The Ecosystem</h4>
+          <h3 className='border-bottom border-dark mb-3'>The Ecosystem</h3>
           <div className='w-100 d-flex flex-row justify-content-around flex-wrap'>
             <Card
               title={'Deploy A NFT Smart Contract'}
+              bodyTextStyle={`h-100`}
               body={
-                'Deploy A Smart Contract to Permanently Store Your Data On the Blockchain.'
+                <div className='d-flex flex-column justify-content-between h-100'>
+                  <p>
+                    Deploy A Smart Contract to Permanently Store Your Data On
+                    the Blockchain.
+                  </p>
+                  <p>Supported Chains: Ethereum, Polygon, Solana, and Tezos</p>
+                </div>
               }
               buttonTitle={'Deploy'}
               onClick={() => router.push('https://deploy.takolabs.io')}
             />
             <Card
               title={'Create A NFT'}
+              bodyTextStyle={`h-100`}
               body={
-                'Upload your data to the Blockchain as an NFT. This will allow you to share your data with anyone.'
+                <div className='d-flex flex-column justify-content-between h-100'>
+                  <p>
+                    Upload your data to the Blockchain as an NFT. This will
+                    allow you to share your data with anyone.
+                  </p>
+                  <p>
+                    Supported Chains: Ethereum, Polygon, Solana, Tezos,and Flow
+                  </p>
+                </div>
               }
               buttonTitle={'Mint'}
               onClick={() => router.push('https://mint.takolabs.io')}
             />
             <Card
               title={'Trade Your NFT'}
+              bodyTextStyle={`h-100`}
               body={
-                'If you are an Artist, Content Creator, or a Collector, you can trade your NFTS with others.'
+                <div className='d-flex flex-column justify-content-between h-100'>
+                  <p>
+                    If you are an Artist, Content Creator, or a Collector, you
+                    can trade your NFTS with others.
+                  </p>
+                  <p>Supported Chains: Ethereum and Polygon</p>
+                </div>
               }
               buttonTitle={'Market'}
-              link={() => router.push('https://market.takolabs.io')}
+              onClick={() => router.push('https://market.takolabs.io')}
             />
           </div>
         </div>

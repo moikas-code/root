@@ -19,7 +19,7 @@ export default function Card({...props}) {
         className={`card card-w d-flex flex-column justify-content-between border-dark w-100 m-3 p-1 ${
           typeof props.className !== 'undefined' ? props.className : ''
         }`}>
-        <div className='d-flex flex-column'>
+        <div className='d-flex flex-column h-100'>
           <H
             headerSize={'4'}
             className='text-center border-bottom border-dark mb-3'>
