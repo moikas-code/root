@@ -9,12 +9,19 @@ export default function Dragon() {
       <style>
         {`
       .s1{
-        height: 600px;
+        min-height: 600px;
       }     
       .s2{
-        height: 400px;
+        min-height: 400px;
       }
-      .
+      .s2-lg{
+        max-width: 1200px;
+        min-height: 400px;
+      }
+      .footer a,
+      .footer a:visited{
+        color: #000;
+      }
       `}
       </style>
 
@@ -51,12 +58,14 @@ export default function Dragon() {
             />
           </div>
         </div>
-        <div className='s2 p-5 w-100 d-flex flex-column justify-content-center align-items-center'>
+        <div className='s2-lg mx-auto p-5 d-flex flex-column justify-content-center align-items-center'>
           <span>
-            Tako Labs is an Open Source project. You can contribute to the
-            project to help us improve the ecosystem. Our goal is to create
-            tools to help introduce new users to the blockchain while improving
-            the user experience.
+            Tako Labs is a community working on an Open Source project. Our goal
+            is to create tools to help introduce new users to the blockchain
+            while improving the user experience and introducing our own layer of
+            fun. You can contribute to the project to help us improve the
+            ecosystem, or join the community to play some games. We are always
+            open to new ideas and feedback.
           </span>
         </div>
       </div>

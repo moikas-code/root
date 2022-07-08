@@ -8,8 +8,10 @@ export default function Card({...props}) {
         {`
           .card-w,
           .card {
+            height:300px;
             max-width: 400px !important;
             width: 100%;
+            font-size: 1.125rem;
           }
         `}
       </style>
